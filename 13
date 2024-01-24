@@ -1,0 +1,56 @@
+// Задача 1 - легкая:
+
+public class Main
+{ public static void main(String[] args) {
+
+        double[] array = new double[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Math.random();
+        }
+
+        double max = array[0]; 
+        double min = array[0];
+        double avg = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(max < array[i])
+                max = array[i];
+            if(min > array[i])
+                min = array[i];
+            avg += array[i]/array.length;
+        }
+
+        System.out.println("max = " + max);
+        System.out.println("min = " + min);
+        System.out.println("avg = " + avg);
+}
+    }
+
+// Задача 2 средняя:
+
+public class Main
+{ public static void main(String[] args)  {
+	String st = "Hello";
+
+                  int count = 0;
+
+                  char[] charsArray = st.toCharArray();
+
+                  for (int i=0; i<st.length();i++) {
+
+                              for(int j=i+1; j<st.length();j++) {
+
+                                         if (charsArray [i] == charsArray [j]) {
+
+                                                    System.out.println(charsArray [j]);
+
+                                                    count ++;
+                                                        }
+                                                }
+                                         }
+
+                                }
+
+                       }
+
+ // Задача 3, 4 
+Решение задач 3 и 4 - Точка роста – пока только на пути изучения абстрактных классов и интерфейсов
